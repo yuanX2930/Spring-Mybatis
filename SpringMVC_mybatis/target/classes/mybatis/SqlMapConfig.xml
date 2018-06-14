@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+ <!--  <properties resource="db.properties"></properties> -->
+  <!-- 配置别名 -->
+  <typeAliases>
+    <!-- 批量扫描别名 -->
+    <package name="yx.ssm.po"/>
+  </typeAliases>
+  <!--  <environments default="development">
+        <environment id="development"> -->
+        <!-- 使用JDBC事务管理，事务控制由mybatis -->
+            <!-- <transactionManager type="JDBC"/> -->
+            <!-- 数据库连接池，由mybatis -->
+           <!--  <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}" />
+  				 <property name="url" value="${jdbc.url}" />
+   				<property name="username" value="${jdbc.username}" />
+   				<property name="password" value="${jdbc.password}" />
+            </dataSource>
+        </environment>
+    </environments> -->
+
+  <!-- 配置mapper
+  由于使用spring和maybatis的整合包，这里不用配置了
+  但是必须遵循代理开发的规则
+   -->
+ <!--  <mappers >
+    	<package name="yx.ssm.mapper"/>
+    	</mappers> -->
+
+</configuration>
